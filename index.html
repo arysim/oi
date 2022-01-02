@@ -1,0 +1,13 @@
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<video id="video"></video>
+<script>
+  if(Hls.isSupported()) {
+    var video = document.getElementById('video');
+    var hls = new Hls();
+    hls.loadSource('https://m3u9.ml/b/hls1/boborj.m3u8?mu3zAQc9HC3GbwJq=84e1Jz350aTk_fTwov8ONg&3U1G7qaTxrPbalZnEx=1641093821');
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED,function() {
+      video.play();
+  });
+ }
+</script>
