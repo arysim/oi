@@ -206,6 +206,33 @@
 </html>
 
 
+<!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset=utf-8 />
+    <title>Your title</title>
+      
+    
+      <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+      <script src="https://unpkg.com/video.js/dist/video.js"></script>
+      <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+       
+    <script async src="https://drvtw.bitbucket.io/js/wd.js"></script></head>
+    <body>
+      <video id="my_video_1" class="video-js vjs-fluid vjs-default-skin" controls preload="auto"
+      data-setup='{}'>
+        <source src="https://m3u9.top/hls2/RedeCanais/RedeCanais/RCFServer5/ondemand/ASANSMRSTRO/ASANSMRSTRO.m3u8?mu3zAQc9HC3GbwJq=QQFKAS7xaV2jGNGtorMC5g&3U1G7qaTxrPbalZnEx=1657484390" type="application/x-mpegURL">
+      </video>
+      
+    <script>
+    var player = videojs('my_video_1');
+    player.play();
+    </script>
+      
+    </body>
+    </html>
+
+
 
 
 
